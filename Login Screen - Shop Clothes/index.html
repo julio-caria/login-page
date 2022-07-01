@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tela de Login - Challenge</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="./style.css">
+
+		<!-- ICONS -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<!-- BARRA DE NAVEGAÇÃO TOPO -->
+		<header class="navbar-top">
+
+			<nav class="topo">
+
+				<li>
+					<span class="text-logo">Lorem Ipsum</span>
+				</li>
+
+				<ul>
+					<li class='nav-link'>
+						<a class='link' href="#">Home</a>
+						<a class='link' href="#">About</a>
+						<a class='link' href="#">Why us?</a>
+						<a class='link' href="#">Offers</a>
+						<a class='link' href="#">Contact</a>
+					</li>
+				</ul>
+
+				<a href="#"><button class='btn'>Login or Register</button></a>
+
+			</nav>
+		</header>
+
+
+		<!-- MAIN SECTION -->
+		<section>
+			<div class='about'>
+				<h2 class="section-title">About us...</h2>
+				<p class="description-shop">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ipsum felis, efficitur quis eros vel, ultrices pellentesque enim. Duis tincidunt sit amet leo nec mattis. Vestibulum ullamcorper ante ac ipsum posuere, in sagittis mi viverra.</p>
+				<a href="#"><button class="btn">Discover our products</button></a>
+			</div>
+
+			<div id="login-screen">
+				<h2 class="section-title">Login</h2>
+				<span class="description-section">Enter your credentials for login</span>
+
+				<form class="user-form">
+					<div class="input-field">
+						<span class="material-icons">person</span>
+						<label for="user">E-mail or username</label>
+						<input type="text" name="user"/>
+					</div>
+					<div class="input-field">
+						<span class="material-icons">lock</span>
+						<label for="password">Password</label>
+						<input type="password" name="password"/>
+					</div>
+
+					<span><a class="link-login"href="#">Forget your Password?</a></span>
+					<span><a class="not-account link-login" href="#">Don't have an account? <span class="details">Create</span></a></span>
+					<input type="submit" class="btn btn-login" value="Login">
+				</form>
+			</div>
+		</section>
+
+
+	</body>
+</html>

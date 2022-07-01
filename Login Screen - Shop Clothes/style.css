@@ -1,0 +1,271 @@
+/*IMPORT FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+	--primary-color: hsl(0, 0%, 5%);
+	--secondary-color: hsl(0, 57%, 54%);
+
+	--white-color: hsl(0, 0%, 100%);
+	--black-color: hsl(0, 0%, 0%);
+	--grey-color: hsl(0, 0%, 80%);
+	--dark-grey-color: #777;
+	--blue-color: #6495ED;
+
+	--color-hover: hsl(0, 72%, 35%);
+}
+
+/*GENERAL FORMAT*/
+* {
+	margin:  0;
+	padding:  0;
+	box-sizing:  border-box;
+}
+
+body {
+	font-family:  'Poppins', sans-serif;
+	font-size:  1rem;
+	font-weight: 500;
+
+	background: url('./assets/background.jpg') no-repeat center;
+
+	width:  100%;
+	height: 100vh;
+
+	overflow: hidden;
+
+	color: var(--white-color);
+}
+
+.btn {
+	border: none;
+
+	padding: 12px;
+	height: auto;
+
+	color: var(--white-color);
+	font-size: 1.063rem;
+	font-family: 'Poppins', sans-serif;
+
+	cursor: pointer;
+	transition: 0.4s ease;
+
+	background: var(--secondary-color);
+	border-radius: 6px;
+}
+
+.btn:hover {
+	background-color: var(--color-hover);
+}
+
+/* HEADER NAVBAR */
+
+.navbar-top .topo {
+	display: flex;
+
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 36px 32px;
+
+	width: 100%;
+	height: 5vh;
+
+	color: var(--white-color);
+	background: var(--primary-color);
+}
+
+header .text-logo {
+	color: var(--white-color);
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+header .topo li {
+	list-style: none;
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.topo a {
+	color: var(--white-color);
+	text-decoration: none;
+
+	transition: 0.4s ease;
+
+	margin-inline: 12px;
+}
+
+.topo a:hover {
+	color: var(--secondary-color);
+}
+
+/* LOGIN FORM */
+
+section {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: 95vh;
+
+	padding: 1.5rem;
+
+	/* border: 2px solid red; */
+}
+
+/* DESCRIPTION SECTION */
+section .about {
+	position: relative;
+	top: 216px;
+	left: 96px;
+
+	width: 35%;
+	height: auto;
+
+	/* border: 2px solid red; */
+}
+
+
+.about h2 {
+	font-size: 3rem;
+
+	margin-block: 0.63rem;
+}
+
+.about p {
+	font-size: 1.53rem;
+
+	margin-bottom: 2rem;
+	font-weight: 500;
+}
+
+.about .btn {
+	font-size: 1.5rem;
+	color: var(--white-color);
+
+	padding-inline: 1.5rem;
+
+	width: 70%;
+}
+
+/* LOGIN FORM */
+#login-screen {
+	color: var(--white-color);
+
+	background: rgba( 0, 0, 0, 0.4 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 8px );
+	-webkit-backdrop-filter: blur( 8px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	width: 25%;
+	height: 45vh;
+
+	position: absolute;
+	right: 64px;
+	top: 212px;
+
+	padding: 1.5rem;
+}
+
+#login-screen h2.section-title {
+	margin-top: 1.5rem;
+}
+
+#login-screen .description-section {
+	margin-bottom: 2rem;
+	color: var(--grey-color);
+}
+
+.input-field:nth-child(1) {
+	margin-top: 1.5rem;
+}
+
+.input-field:nth-child(2) {
+	margin-block: 1.063rem 1.5rem;
+}
+
+.input-field {
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	color: var(--grey-color);
+
+	border-bottom: 1px solid var(--white-color);
+}
+
+section form input {
+	border: none;
+	padding: 12px;
+
+	font-size: 1.063rem;
+
+	background: transparent;
+	width: 100%;
+}
+
+section form input:focus {
+	border: none;
+	outline: none;
+}
+
+section form label {
+	position: absolute;
+	top: 12px;
+	left: 32px;
+
+	z-index: -1;
+
+	color: var(--grey-color);
+}
+
+section #login-screen form span a.link-login {
+	position: relative;
+	top: -1.5rem;
+
+	font-size: 0.9rem;
+
+	transition: 0.5s ease;
+	cursor: pointer;
+
+	text-decoration: none;
+	color: var(--white-color);
+}
+
+section #login-screen form span a.link-login:hover {
+	text-decoration: underline;
+
+	color: var(--secondary-color);
+}
+
+section #login-screen form span a.not-account {
+	position: relative;
+	left: -168px;
+	top: 12px;
+}
+
+section #login-screen form span a.link-login .details {
+	font-weight: 600;
+
+	color: var(--blue-color);
+}
+
+section #login-screen form .btn-login {
+	color: var(--white-color);
+
+	display: block;
+	position: absolute;
+	margin-block: 3rem;
+	margin-inline: auto;
+
+	width: 90%;
+}
